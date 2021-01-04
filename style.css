@@ -1,0 +1,59 @@
+body{
+    background-image:url('sky1.jpg');
+}
+#intro{
+    color: white;
+    text-align: center;
+}
+#want{
+    font-size: 50px;
+    color: blue;
+}
+/* #result{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin-left: 400px;
+    display: none;
+    color: white;
+} */
+#info{
+    font-size: 22px;
+    
+}
+#sign{
+      font-size: 30px;
+      color: white;
+      font-weight: 900;
+      padding-left: 550px;
+}
+#text{
+    letter-spacing: 1px;
+    font-size: 23px;
+    font-family: cursive;
+}
+#sign, #info{
+    color: white;
+}
+#insertdate{
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+}
+#months, #date{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+#click{
+    font-size: larger;
+    padding: 11px;
+margin-left: 550px;
+    background-color: rgb(240, 219, 102);
+}
+#insertions{
+    margin-top: 100px;
+    margin-left: 400px;
+    font-size: 25px;
+    color: blanchedalmond;
+}
