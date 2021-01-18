@@ -7,26 +7,26 @@
 </head>
 <body>
     <div id='intro'>
-<h1 id='want' >WANT TO KNOW YOUR ZODIAC SIGN? </h1>
-<h5 id='text'> Over the years, people have attributed their behaviours, actions, and responses to ther zodiac signs <br>
-While some others believe so much in this, there are some others who dont and see it all as folktale. <br>
+<img src="zodiac image.png" alt="" class="img"> 
+<h1 class="know"> KNOW YOUR ZODIAC SIGN</h1>
 
-But if you want to know your sign, i built a litle something for you. </h5>
+<h5 id='text'> </h5>
 
 </div>
 
 
 <div id=insertions>
  <div id='insertmonth'>   
-   <b>  <label for="months">Select your Birthmonth</label> </b>
-     <select name="months" id="months">
-         <option value="Jan">January</option>
-         <option value="Feb">February</option>
-         <option value="march">March</option>
-         <option value="april">April</option>
+   <b>  <label for="months">Select your birth month</label> </b> 
+     <select name="months" id="months" onchange="insertMonth();">
+        <option value="Select">Select month</option>
+         <option value="Jan" >January</option>
+         <option value="Feb" >February</option>
+         <option value="Mar" >March</option>
+         <option value="Apr">April</option>    
          <option value="may">May</option>
-         <option value="june">June</option>
-         <option value="july">July</option>
+         <option value="jun">June</option>
+         <option value="jul">July</option>
          <option value="aug">August</option>
          <option value="sept">September</option>
          <option value="oct">October</option>
@@ -38,62 +38,55 @@ But if you want to know your sign, i built a litle something for you. </h5>
 
  <div id='insertdate'>  
    
-    <b>  <label for="date">Select your Birthdate</label> </b>
-    <select name="date" id="date">
-        <option value="">1</option>
-        <option value="">2</option>   
-        <option value="">3</option>
-        <option value="">4</option>
-        <option value="">5</option>
-        <option value="">6</option>
-        <option value="">7</option>
-        <option value="">8</option>
-        <option value="">9</option>
-        <option value="">10</option>
-        <option value="">11</option>
-        <option value="">12</option>
-        <option value="">13</option>
-        <option value="">14</option>
-        <option value="">15</option>
-        <option value="">16</option>
-        <option value="">17</option>
-        <option value="">18</option>
-        <option value="">19</option>
-        <option value="">20</option>
-        <option value="">21</option>
-        <option value="">22</option>
-        <option value="">23</option>
-        <option value="">24</option>
-        <option value="">25</option>
-        <option value="">26</option>
-        <option value="">27</option>
-        <option value="">28</option>
-        <option value="">29</option>
-        <option value="">30</option>
-        <option value="">31</option>
+    <b>  <label for="date">Select your birth date</label> </b>
+    <select name="date" id="date" onchange="insertDate()">
+        <option value="date"> Select Date</option>
+        <option value="1">1</option>
+        <option value="2">2</option>   
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
     </select>
 
 </div>
-</div>  <br> <br>
+</div> 
  
 
-
-
-
-
-
-
-
-
 <div id='result'>
- <div id='sign'></div>
- <div id='info'></div>
+ <div id='signs'></div> <br>
+ <div id='infos'> <p></p> </div>
 </div>
-
 <button id='click'> CLICK NOW </button>
 
 
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="practice.js"></script>
 </body>
 </html>

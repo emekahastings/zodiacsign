@@ -1,52 +1,108 @@
 body{
-    background-color: thistle;
+   background-image: url('zodiac background.jpg');
+   text-align: center;
+}
+.img{
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+  animation-name: zodiac;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes zodiac{
+    from{ transform: rotateZ(0deg);
+    transition: linear;}
+    to{
+        transform: rotateZ(360deg); 
+    transition: linear;}
 }
 #intro{
-    color: white;
+    color: rgb(95, 97, 228);
     text-align: center;
 }
-#want{
-    font-size: 50px;
-    color: blue;
+.know{
+    font-size: 40px;
+   
 }
 
-#info{
-    font-size: 22px;
-    
-}
-#sign{
-      font-size: 30px;
-      color: white;
-      font-weight: 900;
-      padding-left: 550px;
-}
-#text{
+#infos{
+    font-size: 19px;
+    color: rgb(242, 241, 245);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
     letter-spacing: 1px;
-    font-size: 23px;
-    font-family: cursive;
 }
-#sign, #info{
-    color: white;
+#result{
+    width: 60%;
+    margin-left: 20%;
+     
 }
+/* @keyframes result{
+from{ transform:translateX(-500px);}
+to{ transform: translateX(0px);}
+
+} */
+#signs{
+      font-size: 45px;
+      color: rgb(96, 94, 231);
+      font-family: cursive;
+      font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
 #insertdate{
     margin-top: 20px;
-    width: 400px;
+    /* width: 400px; */
     height: 100px;
 }
 #months, #date{
-    width: 100px;
+    width: 140px;
     height: 30px;
     font-size: 20px;
 }
 #click{
     font-size: larger;
     padding: 11px;
-    margin-left: 550px;
+    /* margin-left: 600px; */
     background-color: rgb(240, 219, 102);
+ 
 }
 #insertions{
+    width: 50%;
     margin-top: 100px;
     margin-left: 400px;
     font-size: 25px;
     color: blanchedalmond;
+  
+}
+@media (max-width:800px){
+    #insertions{
+        /* margin: auto 0; */
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    #months, #date{
+        width: 130px;
+        height: 25px;
+        font-size: 19px;
+    }
+    #signs{
+        font-size: 35px;
+        color: rgb(96, 94, 231);
+        font-family: cursive;
+        font-weight: 900;
+      text-align: center;
+      letter-spacing: 3px;
+  }
+  #infos{
+      font-size: 20px;
+      margin-left: 0px;
+  }
+
 }
