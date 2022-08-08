@@ -1,90 +1,118 @@
+ 
+// function insertMonth(){
+//     let months=document.getElementById('months').value;
 
-function insertMonth(){
-    let months=document.getElementById('months').value;
-
-return months;
-}
-function insertDate(){
-    let date= document.getElementById('date').value
-
-    return date;
-}
-
-// function showSign(){
-//     insertVal()
-//     if (months.value=='Jan'){
-//         alert('Finally')
-//     } else{
-//         alert('not again')
-//     }
+// return months;
 // }
+// function insertDate(){
+//     let date= document.getElementById('date').value
+
+//     return date;
+// }
+let date= document.getElementById('date');
+let months=document.getElementById('months');
 let click= document.getElementById('click')
 let result= document.getElementById('result')
 let sign= document.getElementById('signs')
 let info=document.getElementById('infos')
+let details= document.getElementById('details')
+let x=document.getElementById('x')
+
+console.log(details)
 console.log(sign)
 click.addEventListener('click', function(){
-    insertMonth();
-    insertDate();
-    getSign()
+  getSign()
+  console.log(date.value)
+    
 })
 
 function getSign(){
     
     if (months.value=='Mar' && date.value>= 21 || months.value=='Apr' && date.value<=19){
-               sign.innerHTML='ARIES';
-                 info.innerHTML='Those born under Aries zodiac sign often have an exciting and enthusiastic energy. They often seek new and challenging adventures that push their limits. They are driven, ambitious and curious, and they tend to have a strong sense of justice. They love competition, in all its forms. They are generally quite optimstic and the love being placed in leadership positions'
-             }
+      console.log('ariesooo')
+      sign.innerHTML='ARIES';
+      info.style.display='block'
+      x.style.display='block'
+      details.innerHTML='Hello, you are willful, positive and independent, you have amazing stamina and potential to succeed, you are independent and ike things to get done your way, you go all out for the people you care about. You tend to be more career oriented than most people. People may misunderstand your resilience for stubborness but its fine.'
+               }
+             
     
            if (months.value=='Apr' && date.value>= 20 || months.value=='may' && date.value<=20){
-                sign.innerHTML='TAURUS';
-                  info.innerHTML= 'TAURUS also known as "The bull", people of this zodiac sign are incredibly dedicated, reliable and dependable. Above all things, they value their sense of security and stability. After Aries brings its fiery energy, its Taurus that lays down the foundation and follows through. They tend to be rather stubborn and dislike change. When they settle with a routine they like its difficult to get them to chnage it.' 
+            sign.innerHTML='TAURUS';
+            info.style.display='block'
+            x.style.display='block ' 
+            details.innerHTML='Hello, you are sleek and have a flair for the good things of life, you are talented with a good sense of humor, you tend to have a large social circle, you ove food and still value your looks, you are also very prudent financially and find yourselves in the good places of life. Its likely you are an artist, a designers and generally people of this sign make good creatives'
               }
+           
+             
               if (months.value=='may' && date.value>= 21 || months.value=='jun' && date.value<=20){
-                sign.innerHTML='GEMIN';
-                  info.innerHTML='Those born under Gemini zodiac sign enjoy socializing and love surounding themselves with people. They are ruled by the planet Mecury, and so they are never happier than when they are sharing their ideas and communicating with the people around them. They enjoy chit-chat and tend to have expression and communicate very high on their list of priorities. Sometimes their love for sharing themselves with others and their never ending list of ideas can make them seem nervous, excited and sometimes even manic'
+                sign.innerHTML='GEMINI';
+                info.style.display='block'
+                x.style.display='block'
+                  details.innerHTML='Hello, you enjoy socializing and love surounding yourselves with people, you are never happier than when you are sharing  ideas and communicating with the people around you. You enjoy chit-chat and tend to have expression and communicate very high on your list of priorities. Sometimes your love for sharing yourselves with others and your never ending list of ideas can make them seem nervous, excited and sometimes even manic'
               }
               if (months.value=='jun' && date.value>= 21 || months.value=='jul' && date.value<=22){
                 sign.innerHTML=' CANCER';
-                  info.innerHTML='Those born under Cancer zodiac sign need to be needed. They have a great desire to feel loved and appreciated in every part of their lives. This is needed so they can develop a sense of security and identity. To the Cancer zodiac sign their sense of home is very important to their feeling of safety and comfort. They find it rather difficult to achieve except they feel safe in their home. They are talented at developng home environments for people that are close to them in both an emotional and a physical sense '
+                info.style.display='block'
+                x.style.display='block'
+                  details.innerHTML='Hello, you love to be needed. You have a great desire to feel loved and appreciated in every part of your life. This is needed so you can develop a sense of security and identity. Your sense of home is very important to your feeling of safety and comfort. You find it rather difficult to achieve except you feel safe in your home. You are talented at developng home environments for people that are close to you in both an emotional and a physical sense '
               }
               if (months.value=='jul' && date.value>= 23|| months.value=='aug' && date.value<=22){
                 sign.innerHTML='LEO';
-                  info.innerHTML='Leos tend to have a royal air about them. their planetory ruler is the sun so they are talented at bringing warmth,life and light into the relationships that are important to them. They have a knd of natural charisma which often makes other signs gravitate towards them. Like their plantory ruler, Leos love to be at the center of attention and they deeply appreciate compliments and even flattery. Their happy and easy-going attitude makes them pleasurable to be around'
+                 info.style.display='block'
+                  x.style.display='block'
+                  details.innerHTML='Hello, you tend to have a royal air about you. you are  talented at bringing warmth,life and light into the relationships that are important to you. You have a knd of natural charisma which often makes other signs gravitate towards you. You love to be at the center of attention and you deeply appreciate compliments and even flattery. Your happy and easy-going attitude makes them pleasurable to be around'
               }
               if (months.value=='aug' && date.value>= 23 || months.value=='sept' && date.value<=22){
                 sign.innerHTML='VIRGO';
-                  info.innerHTML='Those born under the Virgo zodiac sign have capable, organized and analytical minds which often makes them very pleasurable to chat with. Even when they have rather fantastic stories the charming way which tends to help make them sound convincing. Virgos are gifted people and have a natural gift for research whether it comes to assignments or even people. They also have greta memory and talent for intuition. They make for excellent team members in both work and social situtations. They love to collaborate, although their sometimes critical nature can annoy others  when those criticism not understood '
+                info.style.display='block'
+                x.style.display='block'
+                details.innerHTML='Hello, you are  capable, organized and have analytical minds which often makes you very pleasurable to chat with. Even when you have rather fantastic stories the charming way which tends to help make you sound convincing. Virgos are gifted people and have a natural gift for research whether it comes to assignments or even people, you also have great memory and talent for intuition. You make for excellent team members in both work and social situtations. '
               }
               if (months.value=='sept' && date.value>= 23 || months.value=='oct' && date.value<=22){
                 sign.innerHTML='LIBRA';
-                  info.innerHTML='The zodiac sign Libra thrives when their needs of balance, justice, and stability are met. They are charming creatures that somehow always surround themselves with a sense of beauty and harmony. Truthfully some of them can go to extremes searching for that harmony which can make their situations unreasonable and unhealthy. Their ruling planet is venus which means Libra are nurturing, caring and they can make graet defenders of the downtrodden. Sometimes they can be shy if they find difficulties in coming out of their shell and letting their guard down. Despite their more introverted side they still love a good debate.'
+                info.style.display='block'
+                x.style.display='block'
+                details.innerHTML='Hello, you thrive when you are in need of balance. You are charming creatures that somehow always surround yourself with a sense of beauty and harmony. Truthfully some of you can go to extremes searching for that harmony which can make the situations unreasonable and unhealthy. You  are nurturing, caring and can make graet defenders of the downtrodden. Sometimes you can be shy if they find difficulties in coming out of their shell and letting their guard down. '
               }
               if (months.value=='oct' && date.value>= 23 || months.value=='nov' && date.value<=21){
                 sign.innerHTML='SCORPIO';
-                  info.innerHTML='Unfortunately those born with the Scorpio zodiac sign are often musinderstood. They are quite bold with intense personalities and feelings that hide underneath their cool exterior. They are capable people that can complete great and massive projects with control and confidence. Their intensity when approaching a situation means that they can surmount almost all obstacles of they truly put theur mind to it. Many scorpios have an unshakable focus when they need to call on it. However they are often seceretive, seeming withdrawn and uninterested when they are actually keenly observing'
-              }
+                  details.innerHTML='Hello, you are often musinderstood, you are quite bold with an  intense personality and feelings that hide underneath their cool exterior. You are capable people that can complete great and massive projects with control and confidence. Many scorpios have an unshakable focus when they need to call on it. However you are often seceretive, seeming withdrawn and uninterested when they are actually keenly observing'
+                  info.style.display='block'
+                  x.style.display='block'
+                }
               if (months.value=='nov' && date.value>= 22 || months.value=='dec' && date.value<=21){
                 sign.innerHTML='SAGGARITUS ';
-                  info.innerHTML='The saggaritus zodiac sign often gains the reputation of the philospher among their fellow zodiac signs. They do have a great ability to focus nut this may be surprising since many of them like twander and travel the world '
-              }
+                  details.innerHTML='Hello, you have  the reputation of the philospher among their fellow zodiac signs. You  do have a great ability to focus not this may be surprising since many of you like to wander and travel the world '
+                  info.style.display='block'
+                  x.style.display='block'
+                }
               if (months.value=='dec' && date.value>= 22 || months.value=='Jan' && date.value<=19){
                 sign.innerHTML='CAPRCORN';
-                  info.innerHTML= 'Those born under the Capricorn Zodiac sign are talented at applying their keen intelligence and ambition to practical matters. Stability nand order are important to themand this makes them good organizers. Their goals are often lofty and they achieve them slowly but purposefullyand systematically. They are gifted with very sharp intuition but most times they can be secretive about what they perceive. They are patuent with themselves. Theyb have confidence that they can accomplish all theur goalsif they follow their step by step plan. They are responsible people that often take the heavy burden of others whether willingly or because they are so capable. However they find it difficult to share their own troubles and can struggle with depression if they dont learn how to manage their feelings  '
-              }
-              if (months.value=='Jan' && date.value>= 20 || months.value=='Feb' && date.value<=18){
-                sign.innerHTML='AQUARIUS';
-                  info.innerHTML= 'Aquarius often comes off as an oddball, they have quirky personalities and just go about quiely achieving their goals in quiet, unorthidox ways. Often times just because Aquarius choses to take the path less travelled the results of their eccentric method are surpringky effective. Thet are humanitarians of the zodiac, taking up bannenrs for the greater good of humanity. Many of them are also easygoingand their peculiarit along with their curious naturemakes them fast friendships. Sometimes if they dont try to motivate themselves they can succumb to laziness. Many are often gifted with a strong sense of art and poetry '
-              }
+                  details.innerHTML= 'Hello, you are extremely driven, motivated about life, and capable of settling lofty and achievable objectives. You are a symbol of achievement but you tend to mumur snd complain at the slightest inconvenience. Your need for isolation makes it difficult for you to ask for help. You are logical, competitive and gloomyy at times.... They do all they set their mind to do regardless of the situation '
+                  info.style.display='block'
+                  x.style.display='block' 
+                }
+                if (months.value=='Jan' && date.value>= 20 || months.value=='Feb' && date.value<=18){
+                  sign.innerHTML='AQUARIUS';
+                    details.innerHTML= 'Hello, you are talented at applying their keen intelligence and ambition to practical matters. Stability and order are important to them and  this makes you good organizers. Your goals are often lofty, you are gifted with very sharp intuition but most times can be secretive about what they perceive. You are patient with yourselves. They have confidence that they can accomplish all their goals if they follow their step by step plan. '
+                    info.style.display='block'
+                    x.style.display='block' 
+                  }
               if (months.value=='Feb' && date.value>= 19 || months.value=='Mar' && date.value<=20){
                 sign.innerHTML='PISCES';
-                  info.innerHTML='The Pisces zodiac sign are the dreamers amd mystics of the zodiac but you may never know it. Many of them have extremely wild inner lives filled with fantasy, magic and wonder. They may find it hard to express that inner life meaning some of them are introverts. They are honest compassionate and trustworthy but can sometimes take it too far and be rather gullible. Because of that they can be taken advantage of. Beneath their quite exterior they have an intense determination which helps them transcend any obstacles that come their way'
+                  details.innerHTML='Hello, you are naturally emotional sensitive, gracious and emotionally awaare. You are among the most sympathetic of the zodiac signs and would go through great length to make other people happy , you are creative and imaginative, youb are generally dreamers who can be persuaded to do irrational things, you have a hard time asking for help'
+                  info.style.display='block'
+                  x.style.display='block '
               }
-}
 
 
+            }
 
+click.addEventListener('click', function(){
+click.style.display='none'
 
+})
 
-
+       
 

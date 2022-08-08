@@ -8,6 +8,7 @@
 <body>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <div id='intro'>
+        <!-- <img src="sky4.jpg" alt="" class="sky"> -->
 <img src="zodiac image.png" alt="" class="img"> 
 <h1 class="know"> KNOW YOUR ZODIAC SIGN</h1>
 
@@ -18,9 +19,9 @@
 
 <div id=insertions>
  <div id='insertmonth'>   
-   <b>  <label for="months">Select your birth month</label> </b> 
-     <select name="months" id="months" onchange="insertMonth()">
-        <option value="Select">Select month</option>
+   <b>  <label for="months" id="d">Select your birth month</label> </b> 
+     <select name="months" id="months">
+        <option value="Select" >Select month</option>
          <option value="Jan" >January</option>
          <option value="Feb" >February</option>
          <option value="Mar" >March</option>
@@ -39,8 +40,8 @@
 
  <div id='insertdate'>  
    
-    <b>  <label for="date">Select your birth date</label> </b>
-    <select name="date" id="date" onchange="insertDate()">
+    <b>  <label for="date" id="d">Select your birth date</label> </b>
+    <select name="date" id="date" >
         <option value="date"> Select Date</option>
         <option value="1">1</option>
         <option value="2">2</option>   
@@ -80,8 +81,12 @@
  
 
 <div id='result'>
+    <img src="close.png" id="x" onclick="window.location.reload()">
  <div id='signs'></div> <br>
- <div id='infos'> <p></p> </div>
+ <div id='infos'>
+     <p id="details">
+      
+     </p> </div>
 </div>
 <button id='click' > CLICK NOW </button>
 
