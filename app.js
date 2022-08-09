@@ -88,7 +88,7 @@ function getSign(){
                   x.style.display='block'
                 }
               if (months.value=='dec' && date.value>= 22 || months.value=='Jan' && date.value<=19){
-                sign.innerHTML='CAPRCORN';
+                sign.innerHTML='CAPRICORN';
                   details.innerHTML= 'Hello, you are extremely driven, motivated about life, and capable of settling lofty and achievable objectives. You are a symbol of achievement but you tend to mumur snd complain at the slightest inconvenience. Your need for isolation makes it difficult for you to ask for help. You are logical, competitive and gloomyy at times.... They do all they set their mind to do regardless of the situation '
                   info.style.display='block'
                   x.style.display='block' 
@@ -113,9 +113,13 @@ function conditions(){
   
   if(months.selectedIndex===0){
    alert('Please select a valid month')
+   click.style.display='block'
+   click.style.marginLeft='38vw'
   }
   if(date.selectedIndex===0){
     alert('Please select a valid date')
+    click.style.display='block'
+    click.style.marginLeft='35vw'
    }
 }
 

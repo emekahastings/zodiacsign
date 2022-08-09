@@ -135,7 +135,7 @@ body{
   #infos{
     position: relative;
     bottom: 7rem;
-    width: 95vw;
+    width: 100vw;
     height: fit-content;
     display:none;
     margin-bottom: 5rem;
@@ -162,7 +162,7 @@ body{
     height: 8%;
     position: relative;
     left: 87vw;
-    bottom: 0.3rem;
+    bottom: 0rem;
     display: none;
     z-index: 800;
 }
