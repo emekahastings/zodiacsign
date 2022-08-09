@@ -120,8 +120,9 @@ function conditions(){
 }
 
 click.addEventListener('click', function(){
+  click.style.display='none'
   conditions()
-  
+
 })
 
        

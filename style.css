@@ -104,6 +104,8 @@ body{
         width: 100vw;
         margin-left: 0px;
         text-align: center;
+        position: relative;
+        bottom: 1rem;
     }
     .img{
         position: relative;
@@ -160,7 +162,7 @@ body{
     height: 8%;
     position: relative;
     left: 87vw;
-    bottom: 0.6rem;
+    bottom: 0.3rem;
     display: none;
     z-index: 800;
 }
