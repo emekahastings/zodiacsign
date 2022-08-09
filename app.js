@@ -109,9 +109,19 @@ function getSign(){
 
             }
 
-click.addEventListener('click', function(){
-click.style.display='none'
+function conditions(){
+  
+  if(months.selectedIndex===0){
+   alert('Please select a valid month')
+  }
+  if(date.selectedIndex===0){
+    alert('Please select a valid date')
+   }
+}
 
+click.addEventListener('click', function(){
+  conditions()
+  
 })
 
        
